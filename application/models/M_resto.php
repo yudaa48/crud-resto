@@ -17,18 +17,18 @@ class M_resto extends CI_Model
 
 	function get_data($table)
 	{
-    return $this->db->get($table);
+    	return $this->db->get($table);
   	}
 
   	function update_data($table,$data,$where)
   	{
-    $this->db->update($table,$data,$where);
+    	$this->db->update($table,$data,$where);
   	}
 
   	function delete_data($where,$table)
   	{
-    $this->db->where($where);
-    $this->db->delete($table);
+    	$this->db->where($where);
+    	$this->db->delete($table);
   	}
   	
 }
